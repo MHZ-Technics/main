@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#MainScreen{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../images/Wall/Wall1.webp");
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    transition: background-image 3s linear;
+    position: relative;
+}
+.Support{
+    background-color: #F5F5F5;
+    width:80%;
+    height: 40%;
+    border-radius: 90px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    margin-top: 60px;
+}
+.close{
+    font-size: 30px;
+    cursor: pointer;
+}
+.Feed{
+    text-decoration: none;
+    color: #003F9A;
+    transition: color 1s ease;
+}
+.Feed:hover{
+    color:#78C1FF;
+
+}
+
+.WhiteSpace{
+    padding-top: 10px;
+    background-color: White;
+    border-radius: 50px;
+    width: 30rem;
+    height: 25rem;
+    box-shadow: 5px 5px #000;
+    justify-content: center;
+    
+}
+.container{
+    display: flex;
+    opacity: .87;
+    justify-content: center;
+    position: relative;
+}
+.container audio {
+margin: 0 auto ;  
+}
+.fas{
+    margin-right: 10px;
+    cursor: pointer;
+    width: 45px;
+    color: #fcb040 ;
+}
+.fa-redo-alt{
+    color: black;
+}
+.icons{
+    margin: 15px 0 auto;
+}
+.progressbar{
+    cursor: pointer;
+    width:75%;
+    height: 5px;
+    background-color: brown;
+    margin: 20px auto 0;
+    border-radius: 25px;
+    
+}
+.DurationContainer{
+    position: relative;
+    top: 20px;
+    
+}
+.StartAudio{
+    margin-right: 60%;
+}
+.progress{
+    width: 0;
+    background-color: #fcb040;
+    height: 5px;
+    z-index: 100;
+}
+h3{
+    margin: 10px auto ;
+}
+#name{
+   
+    margin: auto;
+    color: #F70000;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #1E8C45
+}
+a:hover{
+    color: #58BB44
+}
+.ArVersion{
+display:inline-block;
+    text-decoration: none;
+    color: #1635a9;
+font-weight:900;
+background-color: aliceblue;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+.ArVersion:hover{
+    color: #8a2a21
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.ChooseOne{
+    display: none;
+    border-radius: 50px;
+    padding: 15 10 20 0 ;
+    background-color: #2871CC;
+    text-align: right;
+    z-index: 99;
+    justify-content: center;
+    width: 200px;
+    position: relative;
+}
+.Title{
+    text-align: center;
+    margin:35px 0px;
+}
+.ChooseTwo{
+    display: flex;
+    flex-direction: column;
+    }
+#buttonCustom{
+display: flex;
+color: #4D5863;
+font-size: 1.75rem;
+margin: 0 auto;
+border-radius: 50px;
+margin-top: 15px;
+}
+#ButtonSelect{
+    margin-top: 15px;
+}
+@media only screen and (max-width:450px){
+
+    .fas{
+        width: 25px;
+        margin-bottom: 3px;
+        margin-right: 5px;
+    }
+    .ChooseOne{
+        width: 370px;
+    }
+    .WhiteSpace{
+        height:26rem;
+    }
+    .Support{
+    width:98%;
+    height: 35%;
+    position: absolute;
+        right: 0;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:750px){
+    .fas{
+        width: 25px;
+        margin-right: 5px;
+}
+       .ChooseOne{
+        width: 200px;
+    }
+    .WhiteSpace{
+        height:26rem;
+    }
+        .Support{
+    width:90%;
+    height: 45%;
+    position: absolute;
+    right: 0;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Holy Quran Project (Beta)</title>
+    <link type="text/css" href="css/main.css?v=4" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../images/quran.ico" rel="icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta name="keywords" content="Quran Project By MHZ,مشروع القرآن الكريم,Quran,Surah,MHZQuran">
+</head>
+
+<body>
+
+    <div id="MainScreen">
+       <a class="ArVersion"href="../">النسخة العربية</a>
+
+        <div class="container">
+            <div class="ChooseOne" id="Choose">
+                <form>
+                    <h2 class="Title">Choose Surah</h2>
+                    <h4>note:Choose sheikh name from the bottom and click confirm</h4>
+                    <label for=Al-Fatihah>Al-Fatihah</label>
+                    <input type='radio' value=Al-Fatihah id=Al-Fatihah name=SurahName>
+                    <br>
+                    <label for=Al-Baqarah>Al-Baqarah</label>
+                    <input type='radio' value=Al-Baqarah id=Al-Baqarah name=SurahName>
+                    <br>
+                    <label for=Al-‘Imran>Al-‘Imran</label>
+                    <input type='radio' value=Al-‘Imran id=Al-‘Imran name=SurahName>
+                    <br>
+                    <label for=An-Nisa’>An-Nisa’</label>
+                    <input type='radio' value=An-Nisa’ id=An-Nisa’ name=SurahName>
+                    <br>
+                    <label for=Al-Kafirun>Al-Kafirun</label>
+                    <input type='radio' value=Al-Kafirun id=Al-Kafirun name=SurahName>
+                    <br>
+                    <label for=An-Nasr>An-Nasr</label>
+                    <input type='radio' value=An-Nasr id=An-Nasr name=SurahName>
+                    <br>
+                    <label for=Al-Lahab>Al-Lahab</label>
+                    <input type='radio' value=Al-Lahab id=Al-Lahab name=SurahName>
+                    <br>
+                    <label for=Al-Ikhlas>Al-Ikhlas</label>
+                    <input type='radio' value=Al-Ikhlas id=Al-Ikhlas name=SurahName>
+                    <br>
+                    <label for=Al-Falaq>Al-Falaq</label>
+                    <input type='radio' value=Al-Falaq id=Al-Falaq name=SurahName>
+                    <br>
+                    <label for=An-Nas>An-Nas</label>
+                    <input type='radio' value=An-Nas id=An-Nas name=SurahName>
+                    <br>
+                </form>
+                <div class="ChooseTwo">
+                    <form>
+                        <h3 class="Title">Choose Sheikh</h3>
+                        <label for='AhmadAlajmy'>AhmadAlajmy</label>
+                        <input type='radio' value='AhmadAlajmy' id='AhmadAlajmy' name=SheikhName>
+                        <br>
+                        <button id="buttonCustom" type="button" onclick="GetSurahName(),GetSheikhName()">Confirm</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="WhiteSpace">
+                <div>
+                    <h3 id="artist"></h3>
+                </div>
+                <h3 id="title"></h3>
+                <div class="ProgressBarContainer">
+                    <div class="DurationContainer">
+                        <span class="StartAudio">00:00</span>
+                        <span class="EndAudio">00:00</span>
+                    </div>
+                    <div class="progressbar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+                <p>Tap the bar to choose the right start point while playing</p>
+                <div class="icons">
+                    <i class="fas fa-backward" id="backwardButton"></i>
+                    <i class="fas fa-play" id="startButton"></i>
+                    <i class="fas fa-forward" id="forwardButton"></i>
+                    <i class="fas fa-redo-alt" id="Repeat" onclick="RepeatSurah()"></i>
+                    <div class="Selection">
+                        <div class="dropdown">
+                            <button id="ButtonSelect" class="dropbtn" onclick="ClickFunc()">Choose Surah and Sheikh Name</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <a class="Feed" href="mailto:m.hossam.zaid@gmail.com">Send Feedback</a>
+                <div class="Moalem">
+                    <a href="../DL/ar_Hosari_program.rar">
+                        <h3 id="DownloadMoshaf">Download Quran Learner(Arabic) -Windows-</h3>
+                    </a>
+                    <a href="../DL/7z2103.exe">
+                        <h4 id="DownloadMoshafExt">Download Extract Program -Windows-</h4>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+<script src="js/script.js?v=4" async></script>
+
+</html>
